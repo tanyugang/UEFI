@@ -1,0 +1,3 @@
+gCommandLineDefines: {'ARCH': 'X64'}
+BuildOptionPcd: []
+Active Platform: /home/tank/EDK/edk2/ProtocolPkg/ProtocolPkg.dsc

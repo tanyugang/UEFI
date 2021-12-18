@@ -1,0 +1,4 @@
+/home/tank/EDK/edk2/MdePkg/Library/UefiDebugLibConOut/UefiDebugLibConOut.inf
+/home/tank/EDK/edk2/MdePkg/Library/UefiDebugLibConOut/DebugLib.c
+/home/tank/EDK/edk2/MdePkg/Library/UefiDebugLibConOut/DebugLibConstructor.c
+/home/tank/EDK/edk2/ProtocolPkg/Build/DEBUG_GCC5/X64/MdePkg/Library/UefiDebugLibConOut/UefiDebugLibConOut/DEBUG/AutoGen.h
