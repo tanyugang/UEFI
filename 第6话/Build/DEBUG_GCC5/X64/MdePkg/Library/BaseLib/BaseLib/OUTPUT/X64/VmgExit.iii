@@ -1,0 +1,31 @@
+;------------------------------------------------------------------------------
+;
+; Copyright (C) 2020, Advanced Micro Devices, Inc. All rights reserved.<BR>
+; SPDX-License-Identifier: BSD-2-Clause-Patent
+;
+; Module Name:
+;
+; VmgExit.Asm
+;
+; Abstract:
+;
+; AsmVmgExit function
+;
+; Notes:
+;
+;------------------------------------------------------------------------------
+
+    DEFAULT REL
+    SECTION .text
+
+;------------------------------------------------------------------------------
+; void
+;
+; AsmVmgExit (
+; void
+; );
+;------------------------------------------------------------------------------
+global AsmVmgExit
+AsmVmgExit:
+    rep vmmcall
+    ret
