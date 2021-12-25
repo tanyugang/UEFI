@@ -1,0 +1,25 @@
+[Defines]
+    INF_VERSION = 0x00010006
+    BASE_NAME = ToyBoot
+    FILE_GUID = 19ba2f45-b2e9-4ea1-b85a-02fadd039db7
+    MODULE_TYPE = UEFI_APPLICATION
+    VERSION_STRING = 0.1
+    ENTRY_POINT = UefiMain
+
+[Sources]
+    Boot.c
+    File.c
+    Log.c
+    Motion.c
+    Tools.c
+    Video.c
+[Packages]
+    MdePkg/MdePkg.dec
+
+[LibraryClasses]
+    UefiApplicationEntryPoint
+    UefiLib
+[Guids]
+    gEfiFileInfoGuid
+
+
