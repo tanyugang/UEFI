@@ -48,50 +48,12 @@ UefiMain(
     }
     #endif
 
-
-
-
-    EFI_PHYSICAL_ADDRESS KernelEntryPoint;
-    Status = Relocate(ImageHandle, L"\\Kernel.elf", &KernelEntryPoint);
-    Print(L"Entry@0x%llx.\n", KernelEntryPoint);
-    
-    /*BOOT_CONFIG BootConfig;
-    //Status = gBS->AllocatePages(AllocateAnyPages, EfiLoaderData, 1, (EFI_PHYSICAL_ADDRESS *)&BootConfig);
-    
-    BootConfig.FrameBufferBase = VideoConfig.FrameBufferBase;
-    BootConfig.FrameBufferSize = VideoConfig.FrameBufferSize;
-    Print(L"\nFrameBufferBase=0x%llX.\n", (UINT64)BootConfig.FrameBufferBase);
-    Status = ByeBootServices(ImageHandle);
-    UINT64 (*KernelEntry)(BOOT_CONFIG *BootConfig);
-    KernelEntry = (UINT64 (*)(BOOT_CONFIG *BootConfig))KernelEntryPoint;
-    EFI_GRAPHICS_OUTPUT_BLT_PIXEL *VideoHandle = (EFI_GRAPHICS_OUTPUT_BLT_PIXEL *)(0xC0000000);
-    EFI_GRAPHICS_OUTPUT_BLT_PIXEL DarkBlue = {0x9A, 0x67, 0x18, 0};
-    UINT64 NoPixels = 900 * 1440;
-    for(int i = 0; i < NoPixels; i++)
-    {
-        *VideoHandle = DarkBlue;
-        VideoHandle++;
-    }
-    UINT64 PassBack = 0;
-    PassBack = KernelEntry(&BootConfig);
-    Print(L"\nPassBack=0x%llX.\n", PassBack);*/
-    //Status = ByeBootServices(ImageHandle);
     EFI_FILE_PROTOCOL *Bin;
     Status = GetFileHandle(ImageHandle, L"\\Kernel.bin", &Bin);
     EFI_PHYSICAL_ADDRESS BinAddress;
     Status = ReadFile(Bin, &BinAddress);
     Status = ByeBootServices(ImageHandle);
-    asm("jmp %0": : "m"(BinAddress));
-    
-
-   
-
-    //void (*kernel_entry)(Kernel_Boot_Info* boot_info);
-    //kernel_entry = (void (*)(Kernel_Boot_Info*))*kernel_entry_point;
-	// Jump to kernel entry.
-	//kernel_entry(&boot_info);
-    
- 
+    asm("jmp %0": : "m"(BinAddress)); 
 
     return Status;
 }
