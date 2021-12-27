@@ -1,0 +1,8 @@
+/home/tank/EDK/Main/ToyBootPkg/Build/DEBUG_GCC5/X64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.obj:  /home/tank/EDK/Main/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.c \
+ /home/tank/EDK/Main/ToyBootPkg/Build/DEBUG_GCC5/X64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/DEBUG/AutoGen.h \
+ /home/tank/EDK/Main/MdePkg/Include/Base.h \
+ /home/tank/EDK/Main/MdePkg/Include/X64/ProcessorBind.h \
+ /home/tank/EDK/Main/MdePkg/Include/Library/PcdLib.h \
+ /home/tank/EDK/Main/MdePkg/Include/Library/DebugPrintErrorLevelLib.h
+
+# Updated 
