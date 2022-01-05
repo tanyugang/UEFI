@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "boot.h": "c",
+        "elf.h": "c"
+    }
+}
