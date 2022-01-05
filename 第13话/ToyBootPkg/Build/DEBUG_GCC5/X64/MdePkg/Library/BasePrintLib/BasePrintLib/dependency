@@ -1,0 +1,7 @@
+
+
+-include /home/tank/EDK/Main/ToyBootPkg/Build/DEBUG_GCC5/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/PrintLibInternal.obj.deps
+
+-include /home/tank/EDK/Main/ToyBootPkg/Build/DEBUG_GCC5/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/PrintLib.obj.deps
+
+               
