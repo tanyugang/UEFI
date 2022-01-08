@@ -1,0 +1,7 @@
+-I/home/tank/EDK/Main/MdePkg/Library/BaseLib/X64
+-I/home/tank/EDK/Main/MdePkg/Library/BaseLib
+-I/home/tank/EDK/Main/ToyBootPkg/Build/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/DEBUG
+-I/home/tank/EDK/Main/MdePkg
+-I/home/tank/EDK/Main/MdePkg/Include
+-I/home/tank/EDK/Main/MdePkg/Test/UnitTest/Include
+-I/home/tank/EDK/Main/MdePkg/Include/X64
